@@ -1,0 +1,254 @@
+/* ******** Genrelle indstillinger ********* */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    background-size: cover;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionwrapper img {
+    width: 70%
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: dimgrey;
+    font-family: cinzel;
+}
+
+h3 {
+    margin-top: 9vw;
+}
+
+p {
+    color: dimgrey;
+    font-family: cinzel;
+    text-align: center;
+}
+
+a {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+footer {
+    color: grey;
+    font-family: cinzel;
+}
+
+header {
+    background: dimgrey;
+    font-family: cinzel;
+}
+
+#menuToggl {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+
+#menuToggl input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggl span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+}
+
+#menuToggl span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggl span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggl input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+}
+
+#menuToggl input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggl input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menuToggl a {
+    color: white;
+}
+
+#menu {
+    box-shadow: 8px 0px 20px 0px rgba(0, 0, 0, 255);
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    margin: -100px 0 0 -50px;
+    padding: 40px;
+    padding-top: 125px;
+    background: linear-gradient(to bottom right, 843d56, ffffff);
+    list-style-type: none;
+    /*    -webkit-font-smoothing: antialiased;*/
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Inconsolata';
+}
+
+#menuToggl input:checked ~ ul {
+    transform: none;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+
+/* ******************* PORTFOLIO ********************** */
+
+.sectionwrapper .img:hover {
+    transform: scale(1.1);
+}
+
+#box_1 .overskrift img {
+    margin-top: 0vw;
+}
+
+#box_2 .overskrift img {
+    margin-top: 10vw;
+}
+
+#box_4 .overskrift img {
+    margin-top: 10vw;
+    width: 85%;
+}
+
+#box_6 .overskrift img {
+    margin-top: 10vw;
+}
+
+#box_1 .tom_1 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_1 .tema_1 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_2 .tom_2 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_2 .tema_3 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_3 .tom_3 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_3 .tema_3 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_4 .tom_4 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_4 .tema_2 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_5 .tom_5 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_5 .tema_2 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_6 .tom_6 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_6 .tema_4 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_7 .tom_7 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+#box_7 .tema_4 {
+    background: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+}
